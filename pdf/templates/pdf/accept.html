@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>FORM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <!-- Form to collect user data -->
+                <form method="POST">
+                    <!-- CSRF token for security -->
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="form-control" id="phone" name="Phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="Summary">About you</label>
+                        <textarea type="text" class="form-control" id="Summary" name="Summary"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="School">School</label>
+                        <input type="text" class="form-control" id="School" name="School">
+                    </div>
+                    <div class="form-group">
+                        <label for="University">University</label>
+                        <input type="text" class="form-control" id="University" name="University">
+                    </div>
+                    <div class="form-group">
+                        <label for="previous_work">Previous Work</label>
+                        <textarea type="text" class="form-control" id="previous_work" name="previous_work"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
+                        <textarea type="text" class="form-control" id="skills" name="skills"></textarea>
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
