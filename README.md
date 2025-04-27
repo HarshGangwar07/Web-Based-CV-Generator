@@ -15,7 +15,7 @@ This project is a Django application that allows users to submit their profile i
 - pdfkit
 - wkhtmltopdf
 
-## Installation
+## Installation required
 
 1. Clone the repository:
 
